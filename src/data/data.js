@@ -1,13 +1,13 @@
 // CUSTOMIZE THIS FILE TO ADD YOUR OWN DATA
 
 const data = {
-    name: "John Doe",
-    bio: "Undergraduate Architectural Student at University of Calgary passionate about building tools to make homes more affordable.",
+    name: "Steve Angoluan",
+    bio: "Undergraduate Architectural Student at University of Calgary passionate about graphic design and the exploration of city systems.",
     contact: {
-        email: "john.doe@gmail.com",
-        phone: "+12345678910",
-        linkedin: "https://www.linkedin.com/",
-        github: "https://www.github.com/",
+        email: "steve.angoluan@ucalgary.ca",
+        phone: "+(587)703-2893",
+        linkedin: "www.linkedin.com/in/steve-angoluan-10607b2ba/",
+        github: "https://github.com/SteveVA05",
     }
 }
 
