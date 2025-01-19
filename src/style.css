@@ -1,10 +1,10 @@
 :root {
   /* Global font, line-height, and colors */
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Ubuntu', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #4e5a4e;
 }
 
 * {
@@ -37,20 +37,20 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #333;
-  color: white;
+  background-color: #293229;
+  color: rgb(255, 255, 255);
   z-index: 10;
 }
 
 a {
   /* Link styling */
-  color: #8da3eb;
+  color: #12a862a8;
   text-decoration: none;
 }
 
 a:hover {
   /* Link hover effects */
-  color: #4c6aca;
+  color: #074b2b;
   text-decoration: underline;
   transition: 0.2s;
 }
@@ -60,13 +60,17 @@ a:hover {
   display: flex;
   flex-direction: column;
   margin: 2em;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
 
 h1 {
   /* Heading font size */
   font-size: 2.5em;
+  font-family: tt-alientz-serif, sans-serif;
+    font-weight: 400;
+    color: #ffffff; /* Example color */
+
 }
 
 #projects {
@@ -95,17 +99,17 @@ h1 {
 #model1,
 #model2,
 #model3 {
-  height: 300px;
-  width: 300px;
+  height: 369px;
+  width: 612px;
   margin-right: 3em;
-  margin-left: 6em;
+  margin-left: em;
   border: 1px solid #ccc;
 }
 
 img {
   /* Image dimensions and margin */
   height: 120px;
-  width: 120px;
+  width: 135px;
   margin: 0.5em;
 }
 
@@ -127,14 +131,22 @@ img {
 }
 
 #description {
-  /* Center description content */
+  /* Restrict description height and enable scrolling */
   display: flex;
-  align-items: center;
-  height: 4em;
-  width: 35em;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: auto;
+  max-height: 8em;  /* Changes the size of the text box */
+  width: 38em;
+  overflow-y: scroll;
+  overflow-x: hidden;
   font-weight: 100;
-  margin-left: 2em;
-  margin-top: 3em;
+  margin-left: 0em;
+  margin-top: 0em;
+  padding: 0.5em;
+  background: rgba(0, 0, 0, 0.1); /* Changes the color of the background of the text box */
+  border: 2px solid rgba(35, 69, 104,); /* Changes the color of the border of the text box */
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 768px) {

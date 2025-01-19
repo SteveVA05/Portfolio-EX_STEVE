@@ -3,10 +3,10 @@ import data from "./data/data";
 import { createThreeScene } from "./threeScene";
 
 const cubes = [
-  "./cubeDrawings/cube1.webp",
-  "./cubeDrawings/cube2.webp",
-  "./cubeDrawings/cube3.webp",
-  "./cubeDrawings/cube4.webp",
+  "./Index/Index -01.png",
+  "./Index/Index-02.png",
+  "./Index/Index-03.png",
+  "./Index/Index-04.png",
 ];
 
 const trees = [
@@ -14,6 +14,13 @@ const trees = [
   "./treeDrawings/tree2.jpg",
   "./treeDrawings/tree3.jpg",
   "./treeDrawings/tree4.jpg",
+];
+
+const houses = [
+  "./houseDrawings/house1.jpg",
+  "./houseDrawings/house2.jpg",
+  "./houseDrawings/house3.jpg",
+  "./houseDrawings/house4.jpg",
 ];
 
 document.querySelector("#app").innerHTML = `
@@ -25,22 +32,36 @@ document.querySelector("#app").innerHTML = `
 
     <section id="projects">
       <div id="project-row">
-      Model 1
+      Project 1: Cadavre Exquis
+       <br>
+
         <div class="three-model">
-          <div id="model1"></div>
+        <a href="./Cadaver/Cadaver E.png" target="_blank">
+        <img src="./Cadaver/Cadaver E.png" id="model1" alt="Model 1 Image" />
+        </a>
+
         </div>
         <div id="images-description">
           <div id="images">
-            ${cubes
-              .map(
-                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`
-              )
-              .join("")}
-          </div>
-          <h4 id="description">A cubic 3D model is a geometric representation of a cube, consisting of six equal square faces joined at right angles. Each edge of the cube is of equal length, forming a symmetrical, rigid structure. The model can be textured, colored, or transparent, and it may include variations such as beveled edges or hollow interiors, depending on its intended purpose in design, animation, or engineering.</h4>
+  <a href="./Index/Index -01.png" target="_blank">
+    <img src="./Index/Index -01.png" alt="cube1" />
+  </a>
+  <a href="./Index/Index-02.png" target="_blank">
+    <img src="./Index/Index-02.png" alt="cube2" />
+  </a>
+  <a href="./Index/Index-03.png" target="_blank">
+    <img src="./Index/Index-03.png" alt="cube3" />
+  </a>
+  <a href="./Index/Index-04.png" target="_blank">
+    <img src="./Index/Index-04.png" alt="cube4" />
+  </a>
+</div>
+          <h4 id="description">	“Oppressive Curiosity” reflects the struggle of individuals navigating oppressive systems while striving  for growth and knowledge. The imagery highlights the tension between societal constraints, such as surveillance and conformity, and the drive to break free, innovate, and explore the unknown.
+          <br><br>
+         Manifesto - I believe that to achieve new heights, individuals must remain curious and question everything. However, this curiosity is often stifled by those in power who impose limitations on exploration and innovation. This theme inspired my cadavre exquis collage, which explores the tension between curiosity and oppression. The fragmented elements represent the human drive to resist, even under restrictive systems. As I layered the images, I noticed how seemingly unrelated pieces began to fit together, forming a narrative of resilience and collective action. In design, curiosity drives progress and innovation, and by embracing it with purpose, we can push beyond limitations.</h4>
         </div>
       </div>
-
+      ${/* Model 2 commented out
       <div id="project-row">
       Model 2
         <div class="three-model">
@@ -58,23 +79,25 @@ document.querySelector("#app").innerHTML = `
           <h4 id="description">A 3D tree model is a geometric representation of a tree, featuring a trunk, branches, and foliage. The trunk is typically cylindrical, with textured bark, while the branches extend outward to support leaves or a canopy. It may include roots or flowers for added detail.</h4>
         </div>
       </div>
-
-      <div id="project-row">
-      Model 3
+       <div id="project-row">
+       */""}
+      ${/* Model 3 commented out
+       Model 3
         <div class="three-model">
           <div id="model3"></div>
         </div>
         <div id="images-description">
           <div id="images">
-            ${cubes
+            ${houses
               .map(
-                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`
+                (house, index) => `<img src="${house}" alt="house${index + 1}" />`
               )
               .join("")}
           </div>
           <h4 id="description">A 3D house model is a geometric representation of a house, featuring walls, a roof, and windows. It often includes additional details such as doors, chimneys, and balconies, with textures like brick, wood, or stucco to enhance realism. The interior may also feature rooms, furniture, and lighting for a more detailed design.</h4>
         </div>
       </div>
+      */""}
     </section>
 
     <ul id="footer-items">
@@ -91,6 +114,6 @@ document.querySelector("#app").innerHTML = `
 `;
 
 // Create three.js scenes for each
-createThreeScene("#model1", "/3DModels/project1/cube.obj");
-createThreeScene("#model2", "/3DModels/project2/tree.obj");
-createThreeScene("#model3", "/3DModels/project3/cottage.obj");
+//createThreeScene("#model1", "/3DModels/project1/cube.obj");
+//createThreeScene("#model2", "/3DModels/project2/tree.obj");
+//createThreeScene("#model3", "/3DModels/project3/cottage.obj");
