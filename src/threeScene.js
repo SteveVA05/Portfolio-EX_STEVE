@@ -8,7 +8,7 @@ export function createThreeScene(containerSelector, objPath) {
 
   // Initialize scene, camera, and renderer
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0xd3d3d3);
+  scene.background = new THREE.Color(0x505B50);
 
   const camera = new THREE.PerspectiveCamera(
     75,
@@ -55,7 +55,7 @@ export function createThreeScene(containerSelector, objPath) {
         if (child.isMesh) {
           child.geometry.computeVertexNormals();
           child.material = new THREE.MeshStandardMaterial({
-            color: 0x000000, // Default material color
+            color: 0xffffff, // Default material color
             wireframe: true, // toggle wireframe
             transparent: true, // toggle transparency
             opacity: 0.5, // change level of transparency

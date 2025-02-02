@@ -97,12 +97,19 @@ h1 {
 }
 
 #model1,
-#model2,
 #model3 {
   height: 369px;
   width: 612px;
   margin-right: 3em;
-  margin-left: em;
+  margin-left: 1em;
+  border: 1px solid #ccc;
+}
+
+#model2 {
+  height: 369px;
+  width: 612px;
+  margin-right: 3em;
+  margin-left: 1em;
   border: 1px solid #ccc;
 }
 

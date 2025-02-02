@@ -2,7 +2,7 @@
 
 const data = {
     name: "Steve Angoluan",
-    bio: "Undergraduate Architectural Student at University of Calgary passionate about graphic design and the exploration of city systems.",
+    bio: "Undergraduate Design Student at University of Calgary passionate about graphic design and the exploration of city systems",
     contact: {
         email: "steve.angoluan@ucalgary.ca",
         phone: "+(587) 703-2893",
